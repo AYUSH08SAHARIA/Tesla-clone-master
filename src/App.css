@@ -1,0 +1,191 @@
+.html{
+  scroll-behavior: smooth;
+  
+  
+}
+.cont {
+  
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  
+} 
+.cont div {
+  scroll-snap-align: start;
+}
+
+
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(../fonts/GothamSSm-Medium_Web.woff2) format('woff2');}
+  
+  @font-face {
+    font-family: 'MyFont2';
+    src: local('MyFont2'), url(../fonts/GothamSSm-Book_Web.woff2) format('woff2');}
+.topbar{
+  font-family: 'MyFont';
+  background-image: radial-gradient(54.97% 272.54% at 27.36% -134.72%,rgba(108,148,255,.92) 0,rgba(0,0,0,.92) 100%);
+  color: white;
+  position: sticky;
+}
+.available{
+  font-family: 'MyFont2';
+  color: white;
+}
+
+.logo{
+  height: 8%;
+  width: 8%;
+  color: white;
+}
+.logo2{
+  height: 8%;
+  width: 8%;
+  color: black;
+}
+.logo:hover{
+  color: black;
+}
+.navbar{
+  font-family: 'MyFont';
+}
+.model{
+  width: 100%;
+  font-family: 'MyFont';
+  animation: downup2 2s ease 0s 1 normal forwards;
+  
+}
+.price{
+  width: 100%;
+  font-family: 'MyFont';
+  animation: downup2 1s ease 0s 1 normal forwards;
+}
+.TaxCredit{
+  width: 100%;
+  font-family: 'MyFont';
+  animation: downup2 5s ease 0s 1 normal forwards;
+}
+.buttons{
+  width: 100%;
+  font-family: 'MyFont';
+  animation: downup 1s ease 0s 1 normal forwards; 
+
+}
+.ltext{
+  
+  width: 100%;
+  font-family: 'MyFont';
+  animation: downup2 2s ease 0s 1 normal forwards;
+}
+.dropdown-menu{
+  font-family: 'MyFont';
+  width: 100%;
+  
+}
+.dropdown-menu {
+padding-left: 5%;
+padding-top: 4%;
+padding-bottom: 5%;
+line-height: 30px;
+animation: updown 1s ease 0s 1 normal forwards; 
+
+
+}
+
+@keyframes downup {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+  
+  100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}}
+  @keyframes downup2 {
+    0% {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }}
+	
+
+@keyframes updown {
+	0% {
+		opacity: 0;
+		transform: translateY(-500px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}}
+.drop{
+  /* animation: downup 2s ease 0s 1 normal forwards; */
+  animation: updown 1s ease 0s 1 normal forwards;
+}
+  
+
+
+
+.topbar2{
+  font-family: 'MyFont';
+  background-color: black;
+  color: white;}
+.line{
+  border: 1px solid red;
+  width: 30%;
+  transform: rotate(90deg);
+  
+}
+.product{
+  margin-top: 7%;
+}
+
+.product-name{
+  font-family: 'MyFont';
+  
+  z-index: 40;
+ 
+  
+} 
+.video{
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  overflow: hidden;
+}
+.carousel{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  object-fit: cover;
+}
+@media (max-width:500px) {
+  .buttons{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    z-index: 50;
+    margin-left: 6rem;
+    
+  }
+
+  
+}
+@media (max-width:500px) {
+  .buttons{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    z-index: 50;
+    margin-left: 3rem;
+    
+  }}
